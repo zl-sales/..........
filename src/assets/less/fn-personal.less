@@ -1,0 +1,585 @@
+.m-accountinfo {
+  line-height: 1;
+  color: #222;
+  // -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, .05);
+  // -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, .05);
+  // box-shadow: 0 0 5px 0 rgba(0, 0, 0, .05);
+  min-height: inherit;
+  position: relative;
+}
+
+.m-accountinfo__tip {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-right: 40px;
+  text-align: right;
+  font-size: 14px;
+  color: #999;
+}
+
+.m-accountinfo__body {
+  position: relative;
+  padding: 0 40px;
+  overflow: hidden;
+}
+
+.m-accountinfo .module {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.m-accountinfo .module:last-of-type {
+  border-bottom: none;
+}
+
+.m-accountinfo .module.module_name {
+  padding: 40px 0;
+}
+
+.m-accountinfo .module .module__left {
+  display: inline-block;
+  width: 120px;
+  vertical-align: top;
+  line-height: 60px;
+}
+
+.m-accountinfo .module .module__right {
+  display: inline-block;
+  width: 100%;
+  margin-right: -120px;
+  padding-right: 120px;
+  vertical-align: top;
+}
+
+.m-accountinfo .module .module__item {
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.m-accountinfo .module .module__item:last-child {
+  border-bottom: none;
+}
+
+.m-accountinfo .module .module__item.module__item_active {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 110px;
+  padding-top: 20px;
+  background: #f9f9f9;
+}
+
+.m-accountinfo .module .module__item.module__item_active .item__label {
+  line-height: 30px;
+  font-size: 14px;
+}
+
+.m-accountinfo .module .module__item.module__item_qrcode {
+  height: 100px;
+  line-height: 100px;
+}
+
+.m-accountinfo .module .module__item .item__label {
+  display: inline-block;
+  width: 17%;
+  vertical-align: top;
+  font-size: 14px;
+}
+
+.m-accountinfo .module .module__item .item__content {
+  display: inline-block;
+  width: 83%;
+  font-size: 14px;
+  color: #666;
+  overflow: hidden;
+}
+
+.m-accountinfo .module .module__item .item__btn_edit {
+  float: right;
+  font-size: 14px;
+  color: #5990f2;
+  cursor: pointer;
+}
+
+.m-accountinfo .module .module__item .item__btn_edit.item__btn_edit_gray {
+  color: #999;
+  cursor: default;
+}
+
+.m-accountinfo .module .module__item .item__btn_disabled {
+  cursor: not-allowed;
+}
+
+.m-accountinfo .module .module__item .item__inputwrapper {
+  position: relative;
+  width: 400px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.m-accountinfo .module .module__item .item__btnwrapper {
+  line-height: 30px;
+  margin-top: 10px;
+}
+
+.m-accountinfo .module .module__item .item__btn {
+  width: 80px;
+  height: 30px;
+  padding: 0;
+  text-align: center;
+  line-height: 30px;
+}
+
+.m-accountinfo .module .module__item .item__btn.item__btn_save {
+  margin-right: 15px;
+}
+
+.m-accountinfo .module .module__item .item__btn.item__btn_cancel {
+  background: #fff;
+}
+
+.m-accountinfo-wrap {
+  padding: 0 40px 10px;
+}
+
+.m-accountinfo .account-info-item {
+  position: relative;
+  height: 60px;
+  line-height: 60px;
+  padding-top: 10px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.m-accountinfo .account-info-item.qrcode {
+  height: auto;
+  line-height: normal;
+}
+
+.m-accountinfo .account-info-item.editing,
+.m-accountinfo .account-info-item.error,
+.m-accountinfo .account-info-item.image {
+  height: auto;
+}
+
+.m-accountinfo .label {
+  color: #222;
+  display: inline-block;
+  width: 177px;
+  position: absolute;
+}
+
+.m-accountinfo .label:before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.m-accountinfo .account-info-item.required .label:before {
+  background-image: url("//p3.pstatp.com/origin/16c70001ad4de0614e07");
+}
+
+.m-accountinfo .account-info-item.image .label {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.m-accountinfo .content {
+  color: #999;
+  font-size: 14px;
+  padding-left: 177px;
+  height: inherit;
+}
+
+.m-accountinfo .content .message {
+  color: #999;
+  margin: 5px 0;
+  line-height: normal;
+}
+
+.m-accountinfo .content .hint {
+  line-height: normal;
+}
+
+.m-accountinfo .content input.error {
+  border-color: #f16736;
+  -webkit-box-shadow: 0 0 0 2px rgba(255, 85, 0, .2);
+  -moz-box-shadow: 0 0 0 2px rgba(255, 85, 0, .2);
+  box-shadow: 0 0 0 2px rgba(255, 85, 0, .2);
+}
+
+.m-accountinfo .content textarea {
+  min-height: 118px;
+}
+
+.m-accountinfo .content textarea.error {
+  border-color: #f16736;
+  -webkit-box-shadow: 0 0 0 2px rgba(255, 85, 0, .2);
+  -moz-box-shadow: 0 0 0 2px rgba(255, 85, 0, .2);
+  box-shadow: 0 0 0 2px rgba(255, 85, 0, .2);
+}
+
+.m-accountinfo .content .image-url {
+  position: absolute;
+  max-width: 128px;
+  max-height: 128px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.m-accountinfo .content .tui-input {
+  font-size: 14px;
+}
+
+.m-accountinfo .account-info-item.image .content {
+  height: 128px;
+}
+
+.m-accountinfo .content-right {
+  padding-left: 150px;
+  position: relative;
+  height: 128px;
+}
+
+.m-accountinfo .content-right .upload-handler {
+  width: 100px;
+  height: 34px;
+  line-height: 34px;
+  position: absolute;
+  top: 0;
+}
+
+.m-accountinfo .content-right .image-upload-btn {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  font-size: 14px;
+}
+
+.m-accountinfo .content-right .image-hint {
+  position: absolute;
+  top: 40px;
+  line-height: normal;
+}
+
+.m-accountinfo .content-right .image-message {
+  position: absolute;
+  bottom: 0;
+  line-height: normal;
+}
+
+.m-accountinfo .edit-content {
+  width: 97%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.m-accountinfo .edit-btn {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  font-size: 12px;
+  color: #5990f2;
+}
+
+.m-accountinfo .edit-icon {
+  display: inline-block;
+  cursor: pointer;
+  width: 17px;
+  height: 16px;
+  color: #999;
+  position: absolute;
+  top: 8px;
+  right: 0;
+}
+
+.m-accountinfo .account-info-submit {
+  display: block;
+  width: 164px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  padding: 0;
+  margin: 20px auto;
+}
+
+.m-accountinfo .account-info-submit:not([disabled]) {
+  background-color: #f16736;
+  color: #fff;
+  border-color: #f16736;
+}
+
+.m-accountinfo .account-info-submit:not([disabled]):focus,
+.m-accountinfo .account-info-submit:not([disabled]):hover {
+  background-color: #f74141;
+  color: #fff;
+  border-color: #f74141;
+}
+
+.m-accountinfo .account-info-submit:not([disabled]):active,
+.m-accountinfo .account-info-submit:not([disabled]):active:focus,
+.m-accountinfo .account-info-submit:not([disabled]):active:hover {
+  background-color: #f62828;
+  color: #fff;
+  border-color: #f62828;
+}
+
+.m-accountinfo .matrix-wrap {
+  position: relative;
+}
+
+.m-accountinfo .matrix-wrap .matrix-name {
+  margin-right: 60px;
+  line-height: 55px;
+}
+
+.m-accountinfo .matrix-wrap .logout-matrix {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: #406599;
+  cursor: pointer;
+}
+
+.m-accountinfo .logout-matrix-dialog .dialog-header .title {
+  font-size: 18px;
+}
+
+.m-accountinfo .logout-matrix-dialog .first-hint {
+  text-align: center;
+}
+
+.m-accountinfo .logout-matrix-dialog .second-hint {
+  text-align: center;
+  color: #f16736;
+  font-size: 14px;
+  padding: 15px 0;
+}
+
+.m-accountinfo .disabled {
+  cursor: not-allowed;
+}
+
+/******************************************************************************************************************/
+/***********************************************************第二段**************************************************/
+/******************************************************************************************************************/
+
+.m-nameandbriefedititem__avatar {
+  margin-right: 40px;
+}
+
+.m-nameandbriefedititem__avatar,
+.m-nameandbriefedititem__info {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.m-nameandbriefedititem .item__btnwrapper {
+  margin-top: 15px;
+}
+
+.m-nameandbriefedititem .item__btn_save {
+  margin-right: 15px;
+}
+
+.m-nameandbriefedititem .item__inputwrapper {
+  position: relative;
+  width: 400px;
+}
+
+.m-nameandbriefedititem .item__inputwrapper .inputwrapper__len { 
+  position: absolute;
+  right: 10px;
+  top: 1px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.inputwrapper__len {
+  position: absolute;
+  right: 10px;
+  top: 1px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.m-nameandbriefedititem .item__inputwrapper.item__inputwrapper-brief {
+  margin-top: 15px;
+  height: inherit;
+  line-height: inherit;
+}
+
+.m-nameandbriefedititem .item__inputwrapper.item__inputwrapper-brief .textarea {
+  padding-right: 50px;
+}
+
+.m-nameandbriefedititem .item__label {
+  display: block;
+}
+
+.m-nameandbriefedititem .item__label.item__label-name {
+  margin-bottom: 12px;
+  font-family: PingFangSC-Medium;
+  font-size: 20px;
+  color: #222;
+  line-height: 1;
+}
+
+.m-nameandbriefedititem .item__label-brief {
+  display: inline-block;
+  line-height: 1;
+  font-size: 14px;
+  color: #666;
+}
+
+.m-nameandbriefedititem .item__tip {
+  display: inline-block;
+  margin-top: 6px;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #999;
+  white-space: nowrap;
+}
+
+.item__tip {
+  display: inline-block;
+  margin-top: 6px;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #999;
+  white-space: nowrap;
+}
+
+.m-nameandbriefedititem .item__tip.item__tip-err {
+  color: #ed4040;
+}
+
+.m-nameandbriefedititem .item__tip.item__tip-err .err__href {
+  color: #406599;
+  cursor: pointer;
+}
+
+.m-nameandbriefedititem .item__btn {
+  width: 80px;
+  height: 30px;
+  padding: 0;
+  text-align: center;
+  line-height: 30px;
+}
+
+/******************************************************************************************************************/
+/***********************************************************第三段**************************************************/
+/******************************************************************************************************************/
+
+.m-avataruploader__imagewrapper {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.m-avataruploader__imagewrapper:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 22px;
+  background: #000;
+  opacity: 0.6;
+}
+
+.m-avataruploader__imagewrapper:before {
+  content: "\66F4\6362\5934\50CF";
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  -webkit-transform: translate(-50%) scale(.96);
+  -moz-transform: translate(-50%) scale(.96);
+  -ms-transform: translate(-50%) scale(.96);
+  transform: translate(-50%) scale(.96);
+  display: none;
+  width: 100%;
+  line-height: 22px;
+  text-align: center;
+  font-size: 10px;
+  color: #fff;
+  z-index: 1;
+}
+
+.m-avataruploader__imagewrapper.active {
+  cursor: pointer;
+}
+
+.m-avataruploader__imagewrapper.active:after,
+.m-avataruploader__imagewrapper.active:before {
+  display: inline-block;
+}
+
+.m-avataruploader__imagewrapper .imagewrapper__image-url {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.m-avataruploader__imagewrapper .imagewrapper__image-op {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  z-index: 1;
+}
+
+.m-avataruploader__imagewrapper .imagewrapper__image-op .upload-handler {
+  width: 80px;
+  height: 80px;
+}
+
+/******************************************************************************************************************/
+/***********************************************************第四段**************************************************/
+/******************************************************************************************************************/
+
+.upload-handler {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.upload-handler.is-disabled {
+  cursor: not-allowed;
+}
+
+.upload-handler input[type=file] {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.upload-handler input[type=file][disabled] {
+  cursor: not-allowed;
+} 

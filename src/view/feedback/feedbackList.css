@@ -1,0 +1,86 @@
+@media screen and (min-width: 750px) {
+  .text {
+    position: relative;
+    width: 100%;
+    font-size: 32px;
+    margin-bottom: 26px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .el-card {
+    margin-bottom: 10px;
+  }
+
+  .el-card span {
+    font-size: 28px;
+    color: #999999;
+  }
+
+  .feeddate {
+    float: right;
+  }
+
+  .isRead {
+    color: #999999 !important;
+  }
+  .cri {
+    background-color: #E22E2E;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;margin-top: 5px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .text {
+    position: relative;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .el-card {
+    margin-bottom: 5px;
+    border: none
+  }
+
+  .el-card__body {
+    padding: 10px 15px !important;
+  }
+
+  .el-card span {
+    font-size: 14px;
+    color: #999999;
+  }
+
+  .feeddate {
+    float: right;
+  }
+
+  .tips {
+    margin-top: 10px;
+    text-align: center;
+    color: #999999;
+    font-size: 16px;
+  }
+
+  .isRead {
+    color: #999999 !important;
+  }
+
+  .cri {
+    background-color: #E22E2E;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;margin-top: 5px;
+  }
+}

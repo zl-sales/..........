@@ -1,0 +1,242 @@
+
+  .sv-publish {
+    min-height: 700px;
+    min-width: 980px
+  }
+
+  .sv-publish .upload {
+    padding: 342px 0 20px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAACECAMAAADxy9RPAAABGlBMVEUAAADg4ODLy8u7u7vg4OChoaHg4OCgoKCgoKDg4OCmpqagoKCjo6OgoKCnp6egoKDg4OCgoKCgoKCgoKDg4OCgoKDg4ODg4OCgoKDg4ODg4OCgoKDg4OCgoKDg4ODg4ODg4OCgoKCgoKDg4ODg4OCgoKDg4OCgoKCgoKCioqLg4ODg4ODg4OCgoKDg4ODg4ODg4ODg4OCgoKDg4OCgoKDg4OCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKDg4OCgoKDg4ODg4ODg4ODg4ODg4OCgoKDg4OCgoKDg4ODg4ODg4OCgoKDg4OCgoKDg4OCgoKCgoKDg4ODg4ODg4ODg4OCgoKDg4OD////7+/unp6fJycn9/f3Z2dnMzMzmvlu7AAAAVXRSTlMAlgEE+oz2EOoMCiL9+Okt8o/v7OKrp5yVS0XX08iyoZJfVCwQ8+7j3t3c17yej35jWzUy0ca6tIaBfG9mWVFMHxkU58quraOHcFNDPz4pGQ7Dg1g422C3YgAAA8hJREFUeNrt2mlX2lAQgOEhGwmI7IgVqYJbXeq+1d3u+zq31bb//280QWtIAgQ8Cc5w7vMF+QL3lTsh5ATio24drU1PLS1Nvzw4+wLsZKsmujL7DRU4ye6j39KsAlykquiYPjxLJyH1+eNReb71PAs8ZKcQsXCQbk+a3XE20jFw8H7eXmo+CV7KyaKdoDPYRtkM4tIWBCVf2gWHQN4J4nQSOjpE3AfyVF1PwS0lfdZobN09hdk1LnPcsrVWREdm74TXl8CNz2V0Tb0Hbj6arYWX89W9DNqeAS/OsShzkL79EljkVzCLuJN2B7uKuAespKpVzxnocZnV8UeSJEmSpAilX5s4dObrdGTrN/FBmFEVlPGBlCEa8/hA5iEaaIP+0XtXGQAygMxLyQCQAd3IABkgA2SADJABMkAGRPlSqdOJ2oIwViqbFscA9e1z8V9u3WIX0KyJdqUf8b0r2kIeBw/4kBNe2ndWAduG8NMm4wuIfAvNlUTQwjmfgBnRSZ3NEJ9roqPK+qTFIuCNaLO8ItoYlW0GAe1LTijKU+HxeI56wIVn/QDgK1huEh/iD+LOhAIQLFhoUg6wNl741w+K77BUuqAbsPHc+/+fA7gMFtSpBliV9mlVASafAsy8swsS3oJHNIfYWvWt/5GWAEhoTsGEJ2CXZsAr4ao46zeEEyC000DBNsWAzeD6WwE3Z3LK4/aAbwQD1GXhslrrvw24KUgZwrVKcIhPvVvEXr8b4BR88hxJCQZ4tkhuVxNugGM3J9oYBANWhI8bEKQRDDAGCSgRHGJtkIA6wYDSIAEbBAO+DhBgXBIMeDNAwAzFk7lm/wG5c4oBsCqCapZVEwFvaZ5OfzJEUC4nAuoKzQDYFH15YZH9Ub8u+lC7gDgDkvr4GHYxNq4nQz6DBRFmNd7LKskn2NOTkILLhCZ60dZViDVAxxA6hJjbeLVsiC7qzbgv7o4j/vn1s4tffxDHIQIxBowhuusPFiCOQRdEAhDxZw+9XlMGRDLE2JsMkAGdMJ8B9kM8kgHilvOXSwbEPsTBAD8cIhkwGluIQQCxw6iaLxbyKuOAPNryjAMKaCswDjDRZjIeYh1tOuMAVTeLeTWqABYnc94bFEcugMEX2WAzMFxT0f+kHK5nzAN2UqwDCmtJeOirErFeigkfYv+jDOhABvhhbzLATwaM6GF0ZAJ+X19dXf9mHHCNtr9hAUdFvKficcwBV2i7Cgso4L0VSQSYeG8miS3UWMR7WmwAkB7iISF6q0H/iN7s4Yjldhva+rjhibiQW87Ir5+ff0EqgKbzbunuAAAAAElFTkSuQmCC) no-repeat;
+    background-position: center 155px;
+    -moz-background-size: 192px 132px;
+    background-size: 192px 132px;
+    text-align: center;
+    color: #999;
+    font-size: 14px
+  }
+
+  .sv-publish :hover,
+  .sv-publish textarea:focus {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-color: #ccc
+  }
+
+  .sv-publish .loading-icon {
+    top: -1px;
+    position: absolute;
+    color: #60a3f5;
+    letter-spacing: 0;
+    cursor: pointer;
+    -webkit-animation: rotate 1.5s infinite linear;
+    -moz-animation: rotate 1.5s infinite linear;
+    animation: rotate 1.5s infinite linear
+  }
+
+  @-webkit-keyframes rotate {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg)
+    }
+
+    25% {
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg)
+    }
+
+    50% {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg)
+    }
+
+    75% {
+      -webkit-transform: rotate(270deg);
+      transform: rotate(270deg)
+    }
+
+    to {
+      -webkit-transform: rotate(359deg);
+      transform: rotate(359deg)
+    }
+  }
+
+  @-moz-keyframes rotate {
+    0% {
+      -moz-transform: rotate(0deg);
+      transform: rotate(0deg)
+    }
+
+    25% {
+      -moz-transform: rotate(90deg);
+      transform: rotate(90deg)
+    }
+
+    50% {
+      -moz-transform: rotate(180deg);
+      transform: rotate(180deg)
+    }
+
+    75% {
+      -moz-transform: rotate(270deg);
+      transform: rotate(270deg)
+    }
+
+    to {
+      -moz-transform: rotate(359deg);
+      transform: rotate(359deg)
+    }
+  }
+
+  @keyframes rotate {
+    0% {
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      transform: rotate(0deg)
+    }
+
+    25% {
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      transform: rotate(90deg)
+    }
+
+    50% {
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      transform: rotate(180deg)
+    }
+
+    75% {
+      -webkit-transform: rotate(270deg);
+      -moz-transform: rotate(270deg);
+      transform: rotate(270deg)
+    }
+
+    to {
+      -webkit-transform: rotate(359deg);
+      -moz-transform: rotate(359deg);
+      transform: rotate(359deg)
+    }
+  }
+
+  .sv-publish button {
+    font-weight: 200;
+    margin-left: 20px
+  }
+
+  .sv-publish .btn-list {
+    width: 100%;
+    text-align: center
+  }
+
+  .sv-publish .upload-button {
+    margin-top: 48px;
+    width: 140px;
+    margin-left: 0
+  }
+
+  .sv-publish .notification {
+    height: 167px;
+    padding-top: 60px;
+    text-align: center
+  }
+
+  .sv-publish .notification .content {
+    height: 50px
+  }
+
+  .sv-publish .notification .icon {
+    width: 50px;
+    height: 50px;
+    vertical-align: top;
+    display: inline-block
+  }
+
+  .sv-publish .notification .tip {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    text-align: left
+  }
+
+  .sv-publish .notification .title {
+    color: #222;
+    font-size: 18px;
+    line-height: 25px;
+    position: relative
+  }
+
+  .sv-publish .notification .link {
+    color: #5990f2;
+    margin-top: 2px;
+    cursor: pointer;
+    line-height: 20px;
+    font-size: 14px
+  }
+
+  .sv-publish .form-item-row {
+    height: 100px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 37px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row
+  }
+
+  .sv-publish .form-item-label {
+    color: #666;
+    width: 108px;
+    padding-top: 5px;
+    font-size: 14px;
+    text-align: center
+  }
+
+  .sv-publish .form-item {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+  }
+
+  .sv-publish .form-item textarea {
+    height: 60px
+  }
+  .sv-publish .count-tip {
+    position: absolute;
+    right: 8px;
+    top: 36px;
+    color: #ccc;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px
+  }
+
+  .sv-publish .publish-at-box {
+    line-height: 1.5em;
+    font-family: inherit;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+    border: 0;
+    border-bottom: 1px solid #e8e8e8;
+    background-color: #f4f5f6;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    height: 130px;
+    overflow: auto;
+    padding: 10px 15px;
+    outline: 0;
+    resize: none
+  }

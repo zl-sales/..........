@@ -1,0 +1,266 @@
+.tui2-input {
+    position: relative;
+    display: inline-block;
+    padding: 6px 7px;
+    width: 100%;
+    outline: none;
+    text-align: left;
+    cursor: text;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-transition: border 0.2s cubic-bezier(.645,.045,.355,1),background 0.2s cubic-bezier(.645,.045,.355,1),-webkit-box-shadow 0.2s cubic-bezier(.645,.045,.355,1);
+    transition: border 0.2s cubic-bezier(.645,.045,.355,1),background 0.2s cubic-bezier(.645,.045,.355,1),-webkit-box-shadow 0.2s cubic-bezier(.645,.045,.355,1);
+    -moz-transition: border 0.2s cubic-bezier(.645,.045,.355,1),background 0.2s cubic-bezier(.645,.045,.355,1),box-shadow 0.2s cubic-bezier(.645,.045,.355,1),-moz-box-shadow 0.2s cubic-bezier(.645,.045,.355,1);
+    transition: border 0.2s cubic-bezier(.645,.045,.355,1),background 0.2s cubic-bezier(.645,.045,.355,1),box-shadow 0.2s cubic-bezier(.645,.045,.355,1);
+    transition: border 0.2s cubic-bezier(.645,.045,.355,1),background 0.2s cubic-bezier(.645,.045,.355,1),box-shadow 0.2s cubic-bezier(.645,.045,.355,1),-webkit-box-shadow 0.2s cubic-bezier(.645,.045,.355,1),-moz-box-shadow 0.2s cubic-bezier(.645,.045,.355,1);
+  }
+  
+  .tui2-input::-moz-placeholder {
+    color: #999;
+    opacity: 1;
+  }
+  
+  .tui2-input:-ms-input-placeholder {
+    color: #999;
+  }
+  
+  .tui2-input::-webkit-input-placeholder {
+    color: #999;
+  }
+  
+  .tui2-input:focus,
+  .tui2-input:hover {
+    border-color: #f97a7a;
+  }
+  
+  .tui2-input:focus {
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 2px rgba(248,89,89,.2);
+    -moz-box-shadow: 0 0 0 2px rgba(248,89,89,.2);
+    box-shadow: 0 0 0 2px rgba(248,89,89,.2);
+  }
+  
+  .tui2-input[disabled],
+  fieldset[disabled] .tui2-input {
+    background-color: #f9f9f9;
+    opacity: 1;
+    cursor: not-allowed;
+    color: #ccc;
+  }
+  
+  .tui2-input[disabled]:hover,
+  fieldset[disabled] .tui2-input:hover {
+    border-color: #d6d6d6;
+  }
+  
+  textarea.tui2-input {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    resize: none;
+  }
+  
+  .tui2-input-lg {
+    padding: 6px 7px;
+    height: 32px;
+  }
+  
+  .tui2-input-sm {
+    padding: 1px 7px;
+    height: 22px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+  }
+  
+  .tui2-input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+    width: 100%;
+  }
+  
+  .tui2-input-group[class*=col-] {
+    float: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .tui2-input-group > [class*=col-] {
+    padding-right: 8px;
+  }
+  
+  .tui2-input-group > .tui2-input,
+  .tui2-input-group-addon,
+  .tui2-input-group-wrap {
+    display: table-cell;
+  }
+  
+  .tui2-input-group > .tui2-input:not(:first-child):not(:last-child),
+  .tui2-input-group-addon:not(:first-child):not(:last-child),
+  .tui2-input-group-wrap:not(:first-child):not(:last-child) {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+  
+  .tui2-input-group-addon,
+  .tui2-input-group-wrap {
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+  
+  .tui2-input-group-wrap > * {
+    display: block!important;
+  }
+  
+  .tui2-input-group .tui2-input {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  
+  .tui2-input-group-addon {
+    padding: 6px 7px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+  }
+  
+  .tui2-input-group-addon .tui-select {
+    margin: -7px;
+  }
+  
+  .tui2-input-group-addon .tui-select .tui-select-selection {
+    background-color: inherit;
+    border: 0;
+    margin: -1px;
+    border: 1px solid transparent;
+  }
+  
+  .tui2-input-group-addon .tui-select-focused .ant-select-selection,
+  .tui2-input-group-addon .tui-select-open .ant-select-selection {
+    border-color: #f97a7a;
+  }
+  
+  .tui2-input-group > .tui2-input:first-child,
+  .tui2-input-group > .tui2-input:first-child .tui-select .tui-select-selection,
+  .tui2-input-group > span > .tui2-input:first-child,
+  .tui2-input-group > span > .tui2-input:first-child .tui-select .tui-select-selection,
+  .tui2-input-group-addon:first-child,
+  .tui2-input-group-addon:first-child .tui-select .tui-select-selection {
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    border-bottom-right-radius: 0;
+    -webkit-border-top-right-radius: 0;
+    -moz-border-radius-topright: 0;
+    border-top-right-radius: 0;
+  }
+  
+  .tui2-input-group-addon:first-child {
+    border-right: 0;
+  }
+  
+  .tui2-input-group-addon:last-child {
+    border-left: 0;
+  }
+  
+  .tui2-input-group > .tui2-input:last-child,
+  .tui2-input-group > .tui2-input:last-child .tui-select .tui-select-selection,
+  .tui2-input-group-addon:last-child,
+  .tui2-input-group-addon:last-child .tui-select .tui-select-selection {
+    -webkit-border-bottom-left-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    border-bottom-left-radius: 0;
+    -webkit-border-top-left-radius: 0;
+    -moz-border-radius-topleft: 0;
+    border-top-left-radius: 0;
+  }
+  
+  .tui2-input-group-lg .tui2-input,
+  .tui2-input-group-lg > .tui2-input-group-addon {
+    padding: 6px 7px;
+    height: 32px;
+  }
+  
+  .tui2-input-group-sm .tui2-input,
+  .tui2-input-group-sm > .tui2-input-group-addon {
+    padding: 1px 7px;
+    height: 22px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+  }
+  
+  .tui2-input-group .tui-input-group-wrap .tui2-btn {
+    padding: 6px 20px 6px 30px;
+    margin: 0 0 0 -6px;
+  }
+  
+  .tui2-search-input-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .tui2-search-input.tui2-input-group .tui2-input:first-child,
+  .tui2-search-input.tui2-input-group .tui2-select:first-child {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    position: absolute;
+    top: -1px;
+    width: 100%;
+  }
+  
+  .tui2-search-input.tui2-input-group .tui2-input:first-child {
+    padding-right: 36px;
+  }
+  
+  .tui2-search-input .tui2-search-btn {
+    -webkit-border-radius: 0 1px 1px 0;
+    -moz-border-radius: 0 1px 1px 0;
+    border-radius: 0 1px 1px 0;
+    left: -1px;
+    position: relative;
+    border-width: 0 0 0 1px;
+    z-index: 2;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  
+  .tui2-search-input .tui2-search-btn:hover {
+    border-color: #ccc;
+  }
+  
+  form .tui2-search-input .tui2-search-btn {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+  
+  .tui2-search-input .tui2-select-combobox .tui2-select-selection__rendered {
+    right: 29px;
+  }
+  
+  .has-error .tui2-input {
+    border-color: #f50;
+    -webkit-box-shadow: 0 0 0 2px rgba(255,85,0,.2);
+    -moz-box-shadow: 0 0 0 2px rgba(255,85,0,.2);
+    box-shadow: 0 0 0 2px rgba(255,85,0,.2);
+  }

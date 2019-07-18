@@ -1,0 +1,91 @@
+.tui2-tabs .tui2-tabs-bar {
+  border-bottom: 1px solid #e8e8e8;
+  font-size: 16px;
+  position: relative;
+  outline: none;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.tui2-tabs .tui2-tabs-content {
+  padding: 0 20px;
+}
+.tui2-tabs .tui2-tabs-tab {
+  display: inline-block;
+  padding: 10px 20px;
+  border-bottom: 2px solid transparent;
+  -webkit-transform: translateY(2px);
+  -moz-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  transform: translateY(2px);
+  cursor: pointer;
+  color: #222;
+}
+.tui2-tabs .tui2-tabs-tab a {
+  color: #222;
+}
+.tui2-tabs .tui2-tabs-tab.tui2-tabs-tab-active:not(:only-child),
+.tui2-tabs .tui2-tabs-tab.tui2-tabs-tab-active:not(:only-child) a {
+  color: #f16736;
+}
+.tui2-tabs .tui2-tabs-tab:hover {
+  color: #ff8282;
+}
+.tui2-tabs .tui2-tabs-tab:hover a {
+  color: #ff8282;
+  opacity: 1;
+}
+.tui2-tabs .tui2-tabs-tabpane {
+  display: none;
+  padding: 20px;
+}
+.tui2-tabs .tui2-tabs-tabpane-active {
+  display: block;
+}
+.tui2-tabs .tui2-tabs-tabpane:empty {
+  display: none;
+}
+.tui2-tabs-sub .tui2-tabs-bar {
+  border: none;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e8e8e8;
+  padding-left: 0;
+}
+.tui2-tabs-sub .tui2-tabs-tab {
+  height: 30px;
+  line-height: 20px;
+  margin-right: 10px;
+  padding: 5px 20px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.tui2-tabs-sub .tui2-tabs-tab.tui2-tabs-tab-active:not(:only-child) {
+  color: #fff;
+  background-color: #f16736;
+}
+.tui2-tabs-sub .tui2-tabs-content,
+.tui2-tabs-sub .tui2-tabs-tabpane {
+  padding: 0;
+}
+.ivu-tabs-bar {
+  border-bottom: 1px solid #e8e8e8 !important;
+  font-size: 16px !important;
+  position: relative !important;
+  outline: none !important;
+  padding-left: 20px !important;
+  padding-top: 20px !important;
+}
+.ivu-tabs-nav {
+  font-size: 16px !important;
+}
+.ivu-tabs-nav .ivu-tabs-tab-active {
+  color: #f16736 !important;
+}
+.ivu-card-head {
+  padding-left: 20px !important;
+  padding-top: 20px !important;
+}
+.ivu-card-shadow {
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1) !important;
+}

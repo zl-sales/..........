@@ -1,0 +1,3 @@
+#robots.txtforQingniaokx
+User-agent: *
+Disallow: 

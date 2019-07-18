@@ -1,0 +1,288 @@
+.pgc-article-card {
+    width: 100%;
+    height: 100px;
+    font-weight: 100;
+    margin: 10px 10px 10px 10px;
+}
+
+.pgc-article-card .pgc-article-card-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.pgc-article-card .pgc-article-card-img {
+    margin-right: 40px;
+    width: 154px;
+    height: 100px;
+    vertical-align: top;
+    position: relative;
+    overflow: hidden;
+    -moz-background-size: 45px;
+    background-size: 45px;
+    background-color: #eee;
+    font-size: 12px;
+    color: #ddd;
+    text-align: center;
+    line-height: 159px
+}
+
+.pgc-article-card .pgc-article-card-img img {
+    width: 100%;
+    height: 100%
+}
+
+.pgc-article-card .pgc-article-card-img .video-img {
+    z-index: 1;
+    position: absolute;
+    left: 50px;
+    width: 57px
+}
+
+.pgc-article-card .pgc-article-card-img .video-bg {
+    width: 154px;
+    height: 100px;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px)
+}
+
+.pgc-article-card .pgc-article-card-img:hover {
+    opacity: 1
+}
+
+.pgc-article-card .pgc-article-card-img:before {
+    z-index: 11;
+    color: #fff;
+    position: absolute;
+    top: -28px;
+    left: -28px;
+    width: 56px;
+    height: 56px;
+    background-color: #f16736;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    font-size: 12px;
+    font-weight: 500;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 40px;
+    line-height: 12px
+}
+
+.pgc-article-card .pgc-article-card-body {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.pgc-article-card .pgc-article-card-body .pgc-article-card-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #222
+}
+
+.pgc-article-card .pgc-article-card-body .pgc-article-card-content {
+    font-size: 14px;
+    color: #666;
+    max-height: 40px;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical
+}
+
+.pgc-article-card .pgc-article-card-body .pgc-article-card-status {
+    color: #666;
+    font-size: 14px
+}
+
+.pgc-article-card .pgc-article-card-body .pgc-article-card-status.wtt-status {
+    margin-top: 5px
+}
+
+.pgc-article-card .pgc-article-card-body .pgc-article-card-status span:not(:first-child):before {
+    content: "\FF65";
+    margin: 0 8px;
+    font-size: 20px;
+    line-height: 0;
+    position: relative;
+    top: 2px
+}
+
+.pgc-article-card .pgc-article-card-body .pgc-article-card-label {
+    margin-right: 8px;
+    font-size: 12px;
+    height: 20px;
+    padding: 0 6px;
+    display: inline-block;
+    color: #999;
+    background-color: hsla(0, 0%, 56%, .05);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px
+}
+
+.pgc-article-card .pgc-article-card-body .pgc-article-card-label .icon-questioncircle {
+    -webkit-transform: translateY(1px);
+    -moz-transform: translateY(1px);
+    -ms-transform: translateY(1px);
+    transform: translateY(1px)
+}
+
+.pgc-article-card .pgc-article-card-body .pgc-article-card-label.orange {
+    background-color: rgba(254, 148, 58, .05);
+    color: #fe943a
+}
+
+.pgc-article-card .pgc-article-card-body .pgc-article-card-label.blue {
+    background-color: rgba(56, 151, 240, .05);
+    color: #3897f0
+}
+
+.pgc-article-card .pgc-article-card-body .pgc-article-card-label.red {
+    background-color: rgba(248, 89, 89, .05);
+    color: #f16736;
+}
+
+.pgc-article-card .pgc-article-card-body .pgc-article-card-time {
+    color: #999;
+    font-size: 14px;
+    margin-top: 4px
+}
+
+.pgc-article-card .pgc-article-card-body .pgc-article-card-count {
+    color: #666;
+    font-size: 14px;
+    margin-top: 4px
+}
+
+.pgc-article-card .pgc-article-card-body .pgc-article-card-count span:not(:first-child):before {
+    content: "\FF65";
+    margin: 0 8px;
+    font-size: 20px;
+    line-height: 0;
+    position: relative;
+    top: 2px
+}
+
+.pgc-article-card .shead-post-wrap {
+    cursor: pointer;
+    position: absolute;
+    right: 35px;
+    top: 15px
+}
+
+.pgc-article-card .shead-post {
+    position: relative;
+    display: inline-block;
+    width: 67px;
+    height: 36px;
+    font-size: 14px;
+    border: none;
+    line-height: 36px;
+    cursor: pointer;
+    vertical-align: middle;
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+    color: #fff;
+    text-align: center;
+    background: #f16736;
+}
+
+.pgc-article-card .shead-post:hover {
+    background: #f16736;
+}
+
+.pgc-article-card .shead-post.weitoutiao a {
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    height: 100%
+}
+
+.pgc-article-card .pgc-hover-popup {
+    width: 86px;
+    vertical-align: bottom
+}
+
+.pgc-article-card .more-block {
+    display: inline-block;
+    width: 19px;
+    height: 36px;
+    vertical-align: middle;
+    background: #f16736;
+    -webkit-border-radius: 0 4px 4px 0;
+    -moz-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+    text-align: center
+}
+
+.pgc-article-card .more-triangle {
+    display: inline-block;
+    border-color: #fff transparent transparent;
+    border-style: solid dashed dashed;
+    border-width: 4px;
+    margin-top: 16px
+}
+
+.pgc-article-card .hover-content {
+    padding: 0 !important
+}
+
+.pgc-article-card .hover-content a {
+    padding: 0 24px
+}
+
+.pgc-article-card .shead-post-item {
+    height: 36px;
+    line-height: 36px
+}
+
+.pgc-article-card .shead-post-item:last-child {
+    border-bottom: none
+}
+
+.pgc-article-card .shead-post-item a {
+    color: #5d5d5d;
+    display: block
+}
+
+.pgc-article-card .shead-post-item:hover {
+    background-color: #f4f5f6
+}
+
+ .wtt-audit{
+    font-size: 18px;
+    margin-right:5%;
+    margin-top: 1%
+}

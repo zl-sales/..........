@@ -1,0 +1,30 @@
+@media only screen and (min-width: 320px) {
+    .tixian {
+        padding: 29px;
+      }
+      .title {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 22px;
+        margin-bottom: 20px;
+      }
+      .title .line {
+        display: inline-block;
+        width: 2px;
+        height: 15px;
+        background-color: red;
+        vertical-align: text-top;
+        margin-right: 5px;
+      }
+      ul li {
+        list-style: none;
+        font-size: 14px;
+        color: #333333;
+        line-height: 22px;
+        margin-bottom: 5px;
+      }
+}
+
+

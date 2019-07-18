@@ -1,0 +1,193 @@
+html,
+body,
+#app {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+@media screen and (min-width: 750px) {
+    .bg {
+        width: 100%;
+        height: 100%;
+        background-color: #f7f7f7;
+        /* padding: 160px 32px 0; */
+        padding: 0 10px
+    }
+
+    .createDate {
+        width: 133px;
+        height: 26px;
+        background: rgba(226, 226, 226, 1);
+        border-radius: 13px;
+        margin: 25px auto;
+        text-align: center;
+        line-height: 26px;
+    }
+
+    .avatarright img {
+        float: right;
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+    }
+
+    .tooltipright {
+        float: right;
+        /* margin-top: 30px; */
+        margin-right: 20px;
+        font-size: 28px;
+        position: relative;
+    }
+
+    .tooltipright .cont {
+        box-sizing: border-box;
+        padding: 34px 38px 34px 32px;
+        width: 100%;
+        background-color: #c8defc;
+    }
+
+    #triangle-right {
+        position: absolute;
+        top: 20px;
+        right: -20px;
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-left: 20px solid #c8defc;
+        border-bottom: 10px solid transparent;
+    }
+
+    .avatarleft img {
+        float: left;
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+    }
+
+    .tooltipleft {
+        float: left;
+        /* margin-top: 30px; */
+        margin-left: 20px;
+        font-size: 28px;
+        position: relative;
+    }
+
+    .tooltipleft .cont {
+        box-sizing: border-box;
+        padding: 34px 38px 34px 32px;
+        width: 516px;
+        background-color: #c8defc;
+    }
+
+    #triangle-left {
+        position: absolute;
+        top: 20px;
+        left: -20px;
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-right: 20px solid #c8defc;
+        border-bottom: 10px solid transparent;
+    }
+}
+
+.clearfloat:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+
+.clearfloat {
+    zoom: 1;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .bg {
+        width: 100%;
+        height: 100%;
+        background-color: #f7f7f7;
+        /* padding: 20px 16px 0; */
+        padding: 0 10px
+    }
+
+    .createDate {
+        width: 130px;
+        height: 18px;
+        background: rgba(226, 226, 226, 1);
+        border-radius: 7px;
+        margin: 13px auto;
+        text-align: center;
+        line-height: 18px;
+    }
+
+    .avatarright img {
+        float: right;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+    }
+
+    .tooltipright {
+        float: right;
+        /* margin-top: 30px; */
+        margin-right: 13px;
+        font-size: 14px;
+        position: relative;
+        max-width: 230px;
+    }
+
+    .tooltipright .cont {
+        box-sizing: border-box;
+        padding: 17px 18px 17px 16px;
+        width: 100%;
+        background-color: #c8defc;
+    }
+
+    #triangle-right {
+        position: absolute;
+        top: 10px;
+        right: -10px;
+        width: 0;
+        height: 0;
+        border-top: 5px solid transparent;
+        border-left: 10px solid #c8defc;
+        border-bottom: 5px solid transparent;
+    }
+
+    .avatarleft img {
+        float: left;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+    }
+
+    .tooltipleft {
+        float: left;
+        /* margin-top: 30px; */
+        margin-left: 13px;
+        font-size: 14px;
+        max-width: 230px;
+        position: relative;
+    }
+
+    .tooltipleft .cont {
+        box-sizing: border-box;
+        padding: 17px 19px 17px 16px;
+        width: 258px;
+        background-color: rgb(252, 252, 252);
+    }
+
+    #triangle-left {
+        position: absolute;
+        top: 10px;
+        left: -10px;
+        width: 0;
+        height: 0;
+        border-top: 5px solid transparent;
+        border-right: 10px solid rgb(252, 252, 252);
+        border-bottom: 5px solid transparent;
+    }
+}

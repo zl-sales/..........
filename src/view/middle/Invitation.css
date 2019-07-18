@@ -1,0 +1,143 @@
+html,
+body,
+#App {
+  padding: 0;
+  margin: 0;
+}
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .title {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 22px;
+    margin-bottom: 20px;
+  }
+  .title .line {
+    display: inline-block;
+    width: 2px;
+    height: 15px;
+    background-color: red;
+    vertical-align: text-top;
+    margin-right: 5px;
+  }
+  .yaoqing {
+    padding: 20px;
+  }
+  .boxs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  .box {
+    width: 30%;
+    position: relative;
+  }
+  .box img {
+    width: 100%;
+  }
+  .content {
+    padding: 9px 1px 1px;
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+  .txt {
+    width: 100%;
+    color: #8d7334;
+    font-size: 14px;
+    line-height: 22px;
+    padding-left: 8%;
+  }
+  .cny {
+    font-size: 14px;
+    margin-top: 15%;
+    color: black;
+    /* margin-left: 10%; */
+    text-align: center;
+  }
+  .content .cny:first-child {
+    text-align: left;
+  }
+  .money {
+    color: #f7460b;
+    font-size: 22px;
+  }
+  ul li {
+    list-style: none;
+    font-size: 14px;
+    color: #333333;
+    line-height: 22px;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (width: 320px) {
+  .title {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 22px;
+    margin-bottom: 20px;
+  }
+  .title .line {
+    display: inline-block;
+    width: 2px;
+    height: 15px;
+    background-color: red;
+    vertical-align: text-top;
+    margin-right: 5px;
+  }
+  .yaoqing {
+    padding: 20px;
+  }
+  .boxs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  .box {
+    width: 30%;
+    position: relative;
+  }
+  .box img {
+    width: 100%;
+  }
+  .content {
+    padding: 9px 1px 1px;
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+  .txt {
+    width: 100%;
+    color: #8d7334;
+    font-size: 12px;
+    line-height: 22px;
+    padding-left: 8%; 
+  }
+  .cny {
+    font-size: 12px;
+    margin-top: 6%;
+    color: black;
+    text-align: center;
+  }
+  .content .cny:first-child {
+    text-align: left;
+  }
+  .money {
+    color: #f7460b;
+    font-size: 18px;
+  }
+  ul li {
+    list-style: none;
+    font-size: 14px;
+    color: #333333;
+    line-height: 22px;
+    margin-bottom: 5px;
+  }
+}

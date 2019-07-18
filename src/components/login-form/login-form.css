@@ -1,0 +1,16 @@
+.login-btn {
+  background: #f16736 !important;
+  border-color: #f16736 !important;
+}
+.prompt {
+  width: 35%;
+  vertical-align: middle;
+  text-align: center;
+}
+.validation {
+  width: 60%;
+  margin-right: 5%;
+}
+/* .error {
+    color: rgb(247, 71, 49);
+} */

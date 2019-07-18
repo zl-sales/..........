@@ -1,0 +1,112 @@
+.user-info {
+    overflow: hidden;
+    height: 200px;
+    position: relative;
+    margin: 0 7px 14px;
+    padding: 25px 10px 0;
+    -webkit-box-shadow: 0 0 3px #f1f1f1;
+    -moz-box-shadow: 0 0 3px #f1f1f1;
+    box-shadow: 0 0 3px #f1f1f1;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: -webkit-box-shadow 0.3s;
+    transition: -webkit-box-shadow 0.3s;
+    -moz-transition: box-shadow 0.3s, -moz-box-shadow 0.3s;
+    transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s, -webkit-box-shadow 0.3s, -moz-box-shadow 0.3s;
+    background: #f5f7f9;
+}
+
+.user-info:hover {
+    -webkit-box-shadow: 0 0 7px #999;
+    -moz-box-shadow: 0 0 7px #999;
+    box-shadow: 0 0 7px #999;
+}
+
+.user-info.guest {
+    padding-top: 40px;
+}
+
+.user-info .user-img {
+    text-align: center;
+    height: 84px;
+    display: block;
+}
+
+.user-info .user-img img {
+    width: 84px;
+    height: 84px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.user-info .user-name {
+    line-height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.user-info .user-follow {
+    text-align: center;
+}
+
+.user-info .user-follow a {
+    cursor: pointer;
+    color: #f16736;
+    font-size: 13px;
+    padding: 5px 20px;
+    border: 1px solid #f16736;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.user-info .user-follow a.primary,
+.user-info .user-follow a:hover {
+    background-color: #f16736;
+    color: #fff;
+}
+
+.user-info .user-follow a.disabled {
+    border: 0;
+    color: #999;
+}
+
+.user-info .user-follow a.disabled:hover {
+    background-color: transparent;
+}
+
+.user-info .user-follow a:not(:first-child) {
+    margin-left: 5px;
+}
+
+.user-info .user-follow a i {
+    font-size: 16px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.pgc-loadmore {
+    display: inline-block;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.pgc-loadmore .pgc-loadmore-text,
+.pgc-loadmore i {
+    color: #999;
+    margin-top: -2px;
+    left: -20px;
+}

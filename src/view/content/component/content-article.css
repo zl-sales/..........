@@ -1,0 +1,105 @@
+.header {
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+.title {
+  font-size: 16px;
+  margin-top: 30px;
+}
+.listnum span {
+  color: red;
+}
+.ivu-btn > span {
+  font-size: 16px !important;
+}
+.line {
+  height: 20px;
+  background-color: #f5f7f9;
+}
+.title {
+  font-size: 16px;
+  color: #191515;
+  margin-top: 20px;
+  height: 42px;
+  line-height: 42px;
+}
+.block {
+  font-size: 16px;
+  color: #999999;
+  margin-top: 20px;
+}
+.red {
+  color: red;
+}
+.el-card:last-child {
+  margin-bottom: 0;
+}
+.el-card.is-always-shadow {
+  box-shadow: none;
+}
+.textlist {
+  position: relative;
+}
+.el-tag {
+  margin-top: 19px;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+.el-tag--plain.el-tag--info {
+  border-style: dashed;
+}
+.card_title {
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+}
+.card_date {
+  font-size: 16px;
+  color: #d3d4d6;
+}
+.card_btn {
+  position: absolute;
+  right: 20px;
+  bottom: 18px;
+}
+.el-button {
+  margin-left: 12px;
+  margin-right: 20PX;
+}
+.el-button--text {
+  color: black;
+  font-size: 16px;
+}
+.el-button--text:hover {
+  color: red;
+}
+.content_card .el-card {
+  border-width: 0 0 1px 0;
+}
+.content_card {
+  border: none;
+}
+.tips {
+  font-size: 16px;
+  color: #999999;
+  text-align: center;
+}
+.el-button--text:hover {
+  color: red;
+}
+.el-button--text:focus,
+.el-button--text:hover {
+  color: red;
+}
+.ivu-date-picker {
+  margin-left: 10px;
+}
+.el-input {
+  width: 200px;
+  float: right;
+  margin-right: 55px;
+}
+.ivu-input-wrapper input {
+  font-size: 14px;
+  text-align: center;
+}

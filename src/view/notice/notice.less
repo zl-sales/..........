@@ -1,0 +1,130 @@
+@import "../../assets/less/fn-ivu-card.less";
+.message-info {
+    position: relative;
+}
+
+.message-info .status-wrap {
+    position: absolute;
+    top: 12px;
+    right: 24px;
+}
+
+.message-info .status-wrap li {
+    float: left;
+    color: #222;
+    font-size: 14px;
+    line-height: 1;
+    padding: 0 12px;
+    margin: 17px 0;
+    border-left: 1px dotted #c5c5c5;
+}
+
+.message-info .status-wrap li:hover {
+    cursor: pointer;
+}
+
+.message-info .status-wrap li:first-child {
+    border-left: 0;
+}
+
+.message-info .status-wrap li a {
+    color: #222;
+}
+
+.message-info .message-tip {
+    padding: 20px 40px 12px;
+    color: #999;
+    font-size: 14px;
+}
+
+.message-info .message-wrapper {
+    padding: 0 40px 0 50px;
+}
+
+.message-info .message-wrapper .sys-notice-cell {
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.message-info .message-wrapper .sys-notice-bar {
+    position: relative;
+    line-height: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.message-info .message-wrapper .sys-notice-bar.user-bar {
+    margin-bottom: 5px;
+}
+
+.message-info .message-wrapper .sys-notice-msg {
+    display: block;
+    word-break: break-all;
+    margin-left: 10px;
+}
+
+.message-info .message-wrapper .user-bar .sys-notice-msg {
+    display: inline;
+}
+
+.message-info .message-wrapper .sys-content {
+    -webkit-box-flex: 7;
+    -webkit-flex: 7;
+    -moz-box-flex: 7;
+    -ms-flex: 7;
+    flex: 7;
+    margin-right: 90px;
+}
+
+.message-info .message-wrapper .sys-notice-time {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    color: #999;
+    font-size: 14px;
+}
+
+.message-info .message-wrapper .sys-notice-sysicon {
+    position: absolute;
+    left: -38px;
+    width: 28px;
+    height: 28px;
+}
+
+.message-info .message-wrapper .sys-notice-user-avatar {
+    position: absolute;
+    top: 0;
+    left: -38px;
+    width: 28px;
+    height: 28px;
+    overflow: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.message-info .message-wrapper .sys-notice-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.message-info .pgc-loadmore {
+    padding: 20px 0;
+}
+
+.message-info .no-data {
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+}
